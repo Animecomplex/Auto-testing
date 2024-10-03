@@ -272,7 +272,7 @@ episode_number = extract_episode_number(filename)
 
 print(f"Extracted Episode Number: {episode_number}")
 
-LOG_CHANNEL = -1002306621324
+LOG_CHANNEL = -1002306621324  # Make sure this is the correct chat_id for the private channel
 
 @Client.on_message(filters.private & (filters.document | filters.video | filters.audio))
 async def auto_rename_files(client, message):    
